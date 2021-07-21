@@ -1,0 +1,53 @@
+baseurl: /
+languageCode: en-us
+title: A Hugo website
+theme: hugo-lithium
+googleAnalytics: ''
+disqusShortname: ''
+ignoreFiles:
+  - \.Rmd$
+  - \.Rmarkdown$
+  - _cache$
+  - \.knit\.md$
+  - \.utf8\.md$
+permalinks:
+  post: /:year/:month/:day/:slug/
+menu:
+  main:
+    - name: "Home"
+      url: index.html
+    - name: "Syllabus"
+      url: syllabus.html
+    - name: "Schedule"
+      url: schedule.html
+    - name: "Presentations"
+      url: presentations.html
+    - name: "Homework and Readings"
+      url: homework.html
+    - name: "Assignments"
+      url: assignments.html
+    - name: "Videos"
+      url: videos.html
+    - name: "GitHub Repository"
+      url: https://github.com/making-data-science-count/f21-intro-to-data-science-methods
+params:
+  MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
+  MathJaxVersion: 2.7.5
+  description: A website built through Hugo and blogdown.
+  favicon: favicon.ico
+  highlightjsCDN: //cdnjs.cloudflare.com/ajax/libs
+  highlightjsLang:
+    - r
+    - yaml
+  highlightjsTheme: github
+  highlightjsVersion: 9.12.0
+  logo:
+    alt: Logo
+    height: 50
+    url: logo.png
+    width: 50
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: yes
